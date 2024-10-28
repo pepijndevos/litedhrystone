@@ -203,6 +203,8 @@ int main(void)
 #endif
 	uart_init();
 
+	dhrystone_main();
+
 	help();
 	prompt();
 
