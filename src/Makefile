@@ -3,7 +3,7 @@ BUILD_DIR?=../build/
 include $(BUILD_DIR)/software/include/generated/variables.mak
 include $(SOC_DIRECTORY)/software/common.mak
 
-CFLAGS += -fno-common -fno-inline
+CFLAGS += -fno-common -fno-inline -O3
 CFLAGS += -Wno-implicit-int -Wno-implicit-function-declaration
 CFLAGS += -DTIME -DCORE_HZ=12000000ll
 
